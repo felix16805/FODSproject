@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Credentials & Environment Variables (NEVER COMMIT)
+*.env
+.env
+atlas-credentials.env
+.streamlit/secrets.toml
+
+# Allow only template configuration
+!*.env.example
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

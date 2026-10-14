@@ -1,0 +1,70 @@
+======================================================================
+CASE STUDY 2 - SQL + NoSQL MACHINE LEARNING PIPELINE
+======================================================================
+
+1. SQL DATA SOURCE
+----------------------------------------------------------------------
+Students    : 70
+Courses     : 10
+Enrollments : 235
+Grades      : 235
+
+2. NOSQL DATA SOURCE
+----------------------------------------------------------------------
+MongoDB Atlas connection: SUCCESS
+Interaction documents: 70
+
+3. DATA INTEGRATION
+----------------------------------------------------------------------
+Common key: student_id
+Merged dataset shape: (70, 14)
+
+4. PREPROCESSING
+----------------------------------------------------------------------
+Missing values before imputation:
+forum_posts            3
+avg_session_minutes    3
+
+5. MODEL IMPLEMENTATION
+----------------------------------------------------------------------
+Model: Logistic Regression
+Train/Test split: 70% / 30%
+
+6. MODEL EVALUATION
+----------------------------------------------------------------------
+Accuracy : 0.5714
+Precision: 0.6633
+Recall   : 0.5714
+
+7. FINAL MODEL OUTCOME
+----------------------------------------------------------------------
+          Actual        Predicted
+High Performance High Performance
+High Performance High Performance
+High Performance High Performance
+High Performance High Performance
+High Performance  Low Performance
+ Low Performance High Performance
+High Performance High Performance
+High Performance  Low Performance
+High Performance High Performance
+ Low Performance High Performance
+ Low Performance  Low Performance
+High Performance  Low Performance
+High Performance High Performance
+ Low Performance High Performance
+High Performance  Low Performance
+High Performance High Performance
+High Performance  Low Performance
+High Performance  Low Performance
+High Performance High Performance
+High Performance High Performance
+High Performance High Performance
+
+8. INTERPRETATION
+----------------------------------------------------------------------
+The Logistic Regression model achieved 57.14% accuracy, 66.33% weighted precision and 57.14% weighted recall on the 30% test set. The model uses integrated academic and interaction features after missing-value imputation, categorical encoding and numerical scaling.
+
+======================================================================
+PIPELINE EXECUTION COMPLETED SUCCESSFULLY
+======================================================================
